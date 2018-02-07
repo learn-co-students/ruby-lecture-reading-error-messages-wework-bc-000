@@ -1,6 +1,6 @@
 describe "Not having any errors and being all green" do
 
-  context 'NameError' do
+  do context 'NameError' 
     it 'raises a NameError when encountering undefined barewords' do
       expect{
         load './lib/a_name_error.rb'
@@ -8,7 +8,7 @@ describe "Not having any errors and being all green" do
     end
   end
 
-  context 'SyntaxError' do
+  do context 'SyntaxError' 
     it 'raises a SyntaxError for nonsensical code' do
       expect{
         load './lib/a_syntax_error.rb'
